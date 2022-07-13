@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40px;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+    font-size: 60%;
+    list-style-type: none;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg") ;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner figcaption {
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left: 850px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio {
+    box-sizing: border-box;
+    border: solid salmon;
+    position: relative;
+}
+aside {
+    flex: 1;
+    padding: 20px;
+}
+
+.myimage {
+    box-sizing: border-box;
+    height: 30%;
+    width: 30%;
+    transform: scale (0, 1);
+    transform: skew(2deg);
+    border-radius: 50%;
+}
+
+.bio-box {
+    flex: 3;
+    padding: 20px;
+    border: solid salmon;
+    min-width: 63%;
+    min-height: 95%;
+    position: absolute;
+    bottom: 2px;
+    left: 420px
+}
+
+.work {
+    border: solid salmon;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.applications {
+    border: solid salmon;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 400px;
+}
+
+.RefactorCode {
+    border: solid salmon;
+    margin: 40px;
+    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.Portfolio {
+    border: solid salmon;
+    margin: 40px;
+    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    }
+
+.google {
+    border: solid salmon;
+    margin: 40px;
+    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
