@@ -16,7 +16,7 @@ header {
     padding: 15px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 350px;
@@ -31,14 +31,13 @@ nav ul {
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
-.banner figcaption {
+.banner header {
     font-size: 25px;
-    position: absolute;
-    top: 150px;
-    left: 850px;
 }
 
 main {
@@ -49,31 +48,29 @@ main {
 .bio {
     box-sizing: border-box;
     border: solid salmon;
-    position: relative;
-}
-aside {
-    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
 }
+aside {
+    flex: 1 0 0;
+    padding: 20px;
+    margin-top: 2%;
+}
 
-.myimage {
-    box-sizing: border-box;
-    height: 30%;
-    width: 30%;
+aside img {
+    min-width: 300px;
+    width: 33.33%;
     transform: scale (0, 1);
     transform: skew(2deg);
     border-radius: 50%;
 }
 
 .bio-box {
-    flex: 3;
+    flex: 3 0 0;
     padding: 20px;
     border: solid salmon;
-    min-width: 63%;
-    min-height: 95%;
-    position: absolute;
-    bottom: 2px;
-    left: 420px
+    min-width: 400px;
 }
 
 .work {
@@ -83,46 +80,59 @@ aside {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    min-width: 500px;
 }
 
 .applications {
     border: solid salmon;
+    display: flex;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+
+.enlarge {
+    flex: 1 0 0;
+    text-align: left;
+    border: solid;
+    border-width: 1px;
+    margin: 2%;
+    padding: 20px
+}
+
+.enlarge img {
     width: 100%;
+    min-width: 300px;
+
+}
+
+footer {
+    border: solid salmon;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    min-height: 400px;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 400px;
+    padding: 20px
+}
+.contactme {
+    flex: 1 0 0;
+    padding: 20px;
+    min-width: 400px;
 }
 
-.RefactorCode {
+footer ul {
+    flex: 3 0 0;
     border: solid salmon;
-    margin: 40px;
-    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 120%;
+    min-width: 550px;
+    margin-left: 50px;
+
 }
 
-.Portfolio {
-    border: solid salmon;
-    margin: 40px;
-    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
+footer ul li {
     padding: 20px;
-    }
-
-.google {
-    border: solid salmon;
-    margin: 40px;
-    background-image: url("../images/screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Challenge-one-urban-octo-telegram-Develop-index-html-2022-07-05-23_44_12.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
+    margin: 0 2% 
 }
