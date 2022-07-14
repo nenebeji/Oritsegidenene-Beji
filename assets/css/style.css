@@ -42,7 +42,6 @@ header nav ul {
 
 header nav ul li {
     padding: 10px;
-    background-color: var(--background);
     color: var(--background);
     display: flex;
     flex-direction: row;
@@ -53,7 +52,8 @@ header nav ul li {
 }
 
 a {
-    text-decoration: none;
+    background-color: var(--header);
+    color: var(--background);
 }
 
 .banner {
@@ -127,7 +127,7 @@ h2 {
     padding: 20px;
     min-width: 500px;
     background-color: var(--header);
-    color: var(--header);
+    color: var(--background);
     margin-top: 2%;
 }
 
@@ -137,20 +137,29 @@ h2 {
     flex-wrap: wrap;
 }
 
+.enlarge header {
+   justify-content: center;
+}
+
 .enlarge {
-    flex: 1 0 0;
     text-align: left;
     border: solid;
     border-width: 1px;
-    margin: 2%;
-    padding: 20px;
+    margin: 1%;
+    padding: 10px;
     background-color: var(--border);
 }
 
-.enlarge img {
-    width: 100%;
-    min-width: 300px;
+.first {
+    flex: 2 0;
+}
 
+.other {
+    flex: 0 6;
+}
+
+.enlarge:hover {
+    transform: scale(1.3);
 }
 
 footer {
@@ -188,3 +197,50 @@ footer ul li {
 footer a {
     color: var(--background);
 }
+
+@media  screen and (max-width: 992px){
+    header, main, footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }   
+}
+
+
+@media screen and (max-width: 768px) {
+    header, main, footer {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio-box {
+        color: var(--background);
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+  }
