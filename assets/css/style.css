@@ -1,31 +1,63 @@
+:root {
+    --text: #001f33;
+    --background: #e6f5ff;
+    --border: #0099ff;
+    --header: #002080;
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+}
+
+::selection {
+    background-color: var(--border);
+    color: var(--header);
 }
 
 body {
     font-size: 30px;
+    background-color: var(--background);
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 40px;
-    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 5px;
+    background-color: var(--header);
+    color: var(--background);
+    min-width: 500px;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 350px;
-    font-size: 60%;
-    list-style-type: none;
+    font-size: 80%;
+}
+
+header nav ul li {
+    padding: 10px;
+    background-color: var(--background);
+    color: var(--background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid var(--header);
+    border-width: 20px;
+    box-shadow: var(--text);
+}
+
+a {
+    text-decoration: none;
 }
 
 .banner {
-    background-image: url("../images/banner.jpg") ;
+    background-image: url("../images/full-moon-peeking-tree-branches-fog.jpg") ;
     height: 180px;
     width: 100%;
     margin-bottom: 25px;
@@ -34,23 +66,22 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    background-color: var(--background);
 }
 
-.banner header {
-    font-size: 25px;
-}
 
 main {
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--background);
 }
 
 .bio {
     box-sizing: border-box;
-    border: solid salmon;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    background-color: var(--border);
 }
 aside {
     flex: 1 0 0;
@@ -66,25 +97,41 @@ aside img {
     border-radius: 50%;
 }
 
+h2 {
+    font-size: 35px;
+}
+
+#aboutme {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
 .bio-box {
     flex: 3 0 0;
     padding: 20px;
-    border: solid salmon;
     min-width: 400px;
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.bio-box  p {
+    font-size: 80%;
+    line-height: 1.5;
 }
 
 .work {
-    border: solid salmon;
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
     min-width: 500px;
+    background-color: var(--header);
+    color: var(--header);
+    margin-top: 2%;
 }
 
 .applications {
-    border: solid salmon;
     display: flex;
     margin: 2%;
     flex-wrap: wrap;
@@ -96,7 +143,8 @@ aside img {
     border: solid;
     border-width: 1px;
     margin: 2%;
-    padding: 20px
+    padding: 20px;
+    background-color: var(--border);
 }
 
 .enlarge img {
@@ -106,13 +154,15 @@ aside img {
 }
 
 footer {
-    border: solid salmon;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     min-width: 400px;
-    padding: 20px
+    padding: 10px;
+    background-color: var(--header);
+    color: var(--background);
+    margin-top: 2%;
 }
 .contactme {
     flex: 1 0 0;
@@ -122,17 +172,19 @@ footer {
 
 footer ul {
     flex: 3 0 0;
-    border: solid salmon;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 120%;
     min-width: 550px;
     margin-left: 50px;
-
 }
 
 footer ul li {
     padding: 20px;
     margin: 0 2% 
+}
+
+footer a {
+    color: var(--background);
 }
