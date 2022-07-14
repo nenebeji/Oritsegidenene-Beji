@@ -1,2 +1,2 @@
 # My Portfolio
-![final](https://user-images.githubusercontent.com/105363883/179020356-6769f8f9-5f48-4192-a3fd-3d748f34b381.png)
+![final](https://user-images.githubusercontent.com/105363883/179023217-8981d726-ae0b-4fb0-a9bc-fa5a53bf49e1.png)
