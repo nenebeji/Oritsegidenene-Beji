@@ -88,7 +88,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: var(--border);
+    background-color: var(--background);
 }
 aside {
     flex: 1 0 0;
@@ -117,8 +117,10 @@ h2 {
     flex: 3 0 0;
     padding: 20px;
     min-width: 400px;
-    background-color: var(--border);
-    color: var(--text);
+    background-color: #A0D4F8;
+    color: black;
+    border: solid var(--border);
+    border-radius: 5px;
 }
 
 .bio-box  p {
@@ -133,9 +135,9 @@ h2 {
     justify-content: center;
     padding: 20px;
     min-width: 500px;
-    background-color: var(--header);
-    color: var(--background);
+    color: #4C516D;
     margin-top: 2%;
+    border: solid black;
 }
 
 .applications {
@@ -154,16 +156,21 @@ h2 {
     border-width: 1px;
     margin: 1%;
     padding: 10px;
-    background-color: var(--border);
+    background-color: #4C516D;
 }
 
-.first {
+.enlarge h2 {
+    color: white;
+    padding: 5px 0;
+}
+
+/* .first {
     flex: 2 0;
 }
 
 .other {
     flex: 0 6;
-}
+} */
 
 .enlarge:hover {
     transform: scale(1.3);
