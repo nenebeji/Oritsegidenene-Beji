@@ -1,19 +1,21 @@
 # My Portfolio
-![App Image](/assets/images/screenshot.png)
 
-> Oritsegidenene Beji
 
 ## Table of Contents
 
-* Description
+- [Project Description](#project-description)
 
-* * Problems Solved
+  - [Problems Solved](#problems-solved)
 
-* References
+- [Screenshots](#screenshots)
+
+- [Usage](#usage)
+
 
 
 ## Description
-The aim of this was to build a work portfolio, showing potential employers samples of the application I have worked on.
+
+Get to know me.
 
 ### Problems Solved
 
@@ -31,6 +33,14 @@ The aim of this was to build a work portfolio, showing potential employers sampl
 
 * My biggest challenge was working with CSS to get the right sizes of boxes for each section but eventually I'll get better.
 
-## References
+## Screenshots
 
-https://nenebeji.github.io/My_Portfolio/
+![App Image](/assets/images/screenshot.png)
+
+> Oritsegidenene Beji
+
+## Usage
+
+Click the link below:
+
+https://nenebeji.github.io/Oritsegidenene-Beji/
